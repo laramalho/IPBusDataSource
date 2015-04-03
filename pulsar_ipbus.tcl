@@ -38,6 +38,7 @@ synth_design -top top -part xc7vx690tffg1927-2
 write_checkpoint -force -noxdef top.dcp
 
 # implement design
+
 opt_design
 place_design
 phys_opt_design
@@ -54,15 +55,6 @@ report_drc -file $outputDir/post_imp_drc.rpt
 write_verilog -force $outputDir/top_impl_netlist.v
 write_xdc -no_fixed_only -force $outputDir/top_impl.xdc
 write_bitstream -force $outputDir/top.bit
-
-
-
-
-
-
-
-
-
 
 
 

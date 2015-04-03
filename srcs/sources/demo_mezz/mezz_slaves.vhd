@@ -141,13 +141,14 @@ begin
 
 ---- Slave 6: VIPRAM
 --
---	slave6: entity work.ipbus_fpgavpram
---		port map(
---			clock => ipb_clk,
---			reset => ipb_rst,
---			ipbus_in => ipbw(6),
---			ipbus_out => ipbr(6),
---
+	slave6: entity work.ipbus_datasourceram
+		port map(
+			clock => ipb_clk,
+			reset => ipb_rst,
+			ipbus_in => ipbw(6),
+			ipbus_out => ipbr(6)
+			);
+	
 --    --        mc_a => mc_a,
 --    --        mc_b => mc_b,
 --            --vipq => vipq,
