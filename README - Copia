@@ -1,0 +1,5 @@
+Code for data sourcing using IPBus:
+
+> source setup.sh
+> make
+
